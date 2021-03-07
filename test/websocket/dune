@@ -1,0 +1,14 @@
+(library
+ (name lib)
+ (modules lib)
+ (libraries ez-api.common))
+
+(executable
+ (name server)
+ (modules server)
+ (libraries lib ez-api.server))
+
+(executable
+ (name client)
+ (modules client)
+ (libraries lib ez-api.ws))

@@ -1,8 +1,7 @@
 (library
  (name ezAPI)
  (public_name ez-api.common)
- (wrapped false)
- (modules stringCompat resto1 ezUrl ezAPI ezErrorCodes)
+ (modules arg param req path mime meth err security service doc url error_codes ezAPI)
  (libraries lwt ezEncoding ezDebug ezLwtSys))
 
 (library
